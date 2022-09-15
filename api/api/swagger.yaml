@@ -1,0 +1,113 @@
+openapi: 3.0.1
+info:
+  title: SWAPI-DEV
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: https://swapi.dev
+paths:
+  /api/species:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://swapi.dev
+    servers:
+    - url: https://swapi.dev
+  /api/people:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://swapi.dev
+    servers:
+    - url: https://swapi.dev
+  /api/:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+              examples:
+                "0":
+                  value: "{\"people\":\"https://swapi.dev/api/people/\",\"planets\"\
+                    :\"https://swapi.dev/api/planets/\",\"films\":\"https://swapi.dev/api/films/\"\
+                    ,\"species\":\"https://swapi.dev/api/species/\",\"vehicles\":\"\
+                    https://swapi.dev/api/vehicles/\",\"starships\":\"https://swapi.dev/api/starships/\"\
+                    }"
+      servers:
+      - url: https://swapi.dev
+    servers:
+    - url: https://swapi.dev
+  /api/vehicles:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://swapi.dev
+    servers:
+    - url: https://swapi.dev
+  /api/films:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://swapi.dev
+    servers:
+    - url: https://swapi.dev
+  /api/planets:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://swapi.dev
+    servers:
+    - url: https://swapi.dev
+  /api/starships:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://swapi.dev
+    servers:
+    - url: https://swapi.dev
+components:
+  schemas:
+    inline_response_200:
+      type: object
+      properties:
+        films:
+          type: string
+        planets:
+          type: string
+        species:
+          type: string
+        starships:
+          type: string
+        vehicles:
+          type: string
+        people:
+          type: string
+      example:
+        films: films
+        planets: planets
+        species: species
+        starships: starships
+        vehicles: vehicles
+        people: people
